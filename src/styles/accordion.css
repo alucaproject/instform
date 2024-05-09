@@ -12,6 +12,10 @@
     margin-top: 1rem;
 }
 
+button {
+    color: var(--text-dark);
+}
+
 .accordion .toggle {
     display: flex;
     justify-content: space-between;

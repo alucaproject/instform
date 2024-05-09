@@ -5,7 +5,7 @@ header {
     url("../assets/photos/jon-grogan-mB_yu9FBVeo-unsplash4899x3245.jpg");
     */
     background-image: linear-gradient(0.05turn, rgba( 0, 0, 0, .99), rgba( 17, 23, 43, .40), rgba( 17, 23, 43, .70)),
-    url("../assets/photos_webp/jon-grogan-mB_yu9FBVeo-unsplash4899x3245.webp");
+    url("../assets/photos_webp/jon-grogan-mB_yu9FBVeo-unsplash2500x1656.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -27,9 +27,9 @@ header {
 .header__container h1 {
     /*margin-bottom: 2rem;*/
     max-width: 600px;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 300;
-    line-height: 5rem;
+    line-height: 3.7rem;
     color: var(--white); 
 }
 
@@ -38,6 +38,7 @@ header {
 
     .header__container h1 {
         font-size: 4.7rem;
+        line-height: 5.7rem;
     }
 
 }

@@ -1,5 +1,5 @@
 import "../styles/faq2.css";
-import image from "../assets/photos_webp/jon-grogan-mB_yu9FBVeo-unsplash4899x3245.webp";
+import image from "../assets/photos_webp/jon-grogan-mB_yu9FBVeo-unsplash2500x1656.webp";
 import { useRef } from "react";
 import { motion, useScroll, useTransform} from "framer-motion";
 

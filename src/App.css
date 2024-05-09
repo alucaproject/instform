@@ -83,6 +83,7 @@
   outline: none;
   border: none;
   white-space: nowrap;
+  font-weight: 700;
   color: var(--primary-color-dark);
   background-color: var(--secondary-color);
   border-radius: 0px;

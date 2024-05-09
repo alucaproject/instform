@@ -13,7 +13,9 @@ const Loader = ( {setLoading} ) => {
     });
 
     return(
-        <div className="loader__wrapper">
+        <div className="loader__container">
+            <div className="loader__wrapper">
+
 
                 <div className="loader__logo nav__logo">
                     <motion.p
@@ -32,7 +34,9 @@ const Loader = ( {setLoading} ) => {
                         SECURITY SOLUTIONS
                     </motion.p>
                 </div>
-                
+
+
+            </div>    
         </div>
     );
 
