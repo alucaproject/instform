@@ -1,0 +1,27 @@
+
+.faq__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.faq__image {
+    overflow: hidden;
+    margin-inline: auto;
+}
+
+.faq__image img {
+    max-width: 450px;
+    margin-inline: auto;
+}
+
+.faq__content .section__header {
+    margin-bottom: 1rem;
+}
+
+
+
+@media (width > 768px) {
+    .faq__container {
+        grid-template-columns: repeat(2, 1fr );
+    }
+}

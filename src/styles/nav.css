@@ -1,0 +1,142 @@
+
+nav {
+    position: fixed;
+    width: 100%;
+    /* this will center a fixed element */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    z-index: 1;
+  
+
+    background-color: transparent;
+    color: var(--white);
+    font-weight: 700;
+    transition: 0.9s;
+    
+}
+.nav__header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;    
+}
+.nav__logo a {
+    font-size: 1.5rem;
+    color: inherit;
+    /* logo styling in app.css under .nav__logo span */
+}
+.nav__menu__btn {
+    cursor: pointer;
+
+    font-size: inherit;
+    font-weight: inherit;    
+    color: inherit; 
+}
+.nav__menu__btn:hover {
+    color: var(--secondary-color);
+}
+
+/* mobile viewport links */
+.nav__links__wrapper {    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    background-color: var(--primary-color-dark);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    z-index: -1;
+}
+.nav__links__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    font-size: 7vw;
+    color: var(--white); /* keeps mobile links white on scroll */
+}
+
+.nav__links__mobile__secondary {
+    font-size: 1rem;
+}
+
+/* desktop viewport links */
+.nav__links__desktop {
+    display: none;
+}
+
+.nav__btns {
+    display: none;
+}
+
+/* app__link styles */
+.app__link {
+    cursor: pointer;
+
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit; 
+
+    transition: 0.15s;
+}
+.app__link:hover {
+    color: var(--secondary-color);
+}
+.app__link__active {
+    color: var(--secondary-color);
+}
+
+@media (width > 768px) {
+    nav {
+        padding: 2rem 2rem;
+        max-width:var(--max-width);
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0rem;
+    }
+    .nav__header {
+        flex: 1;
+
+        padding: 0;
+        background-color: transparent;
+    }
+    .nav_logo a {
+        font-size: 1.5rem;
+    }
+    .nav__menu__btn {
+        display: none;
+    }
+    .nav__links__desktop {
+        flex: 2;
+
+        position: static;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background-color: transparent;
+        
+        gap: 2.5rem;
+    }
+    
+    .nav__btns {
+        flex: 1;
+
+        display: flex;
+        justify-content: end;
+    }
+}

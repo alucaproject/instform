@@ -1,0 +1,43 @@
+
+header {
+    /* 
+    background-image: linear-gradient( rgba( 203,126,31,.45), rgba( 203,126,31, .45)),
+    url("../assets/photos/jon-grogan-mB_yu9FBVeo-unsplash4899x3245.jpg");
+    */
+    background-image: linear-gradient(0.05turn, rgba( 0, 0, 0, .99), rgba( 17, 23, 43, .40), rgba( 17, 23, 43, .70)),
+    url("../assets/photos_webp/jon-grogan-mB_yu9FBVeo-unsplash4899x3245.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.header__container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.header__container p {
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.header__container h1 {
+    /*margin-bottom: 2rem;*/
+    max-width: 600px;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 5rem;
+    color: var(--white); 
+}
+
+
+@media (width > 768px) {
+
+    .header__container h1 {
+        font-size: 4.7rem;
+    }
+
+}

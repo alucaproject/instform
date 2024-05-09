@@ -1,0 +1,67 @@
+.accordion-parent {
+    background-color: transparent;
+    margin-top: 1rem;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    background-color: transparent;
+    margin-top: 1rem;
+}
+
+.accordion .toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    text-align: left;
+
+    padding: 1rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: color 0.15s ease, fill 0.15s ease;
+}
+
+.accordion .toggle:hover {
+    color: var(--text-light);
+    fill: var(--text-light);
+}
+
+.accordion:first-child .toggle {
+    border-bottom: 0px;
+}
+
+.accordion .toggle .direction-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    font-weight: 200;
+    font-size: 1rem;
+} 
+
+.accordion .content-parent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out;
+    
+    border-bottom: 1px solid var(--text-light);
+}
+
+.accordion.toggled .content-parent {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+}
+
+.accordion .content {
+    /* further content stylling in the "content" div */
+    margin: 1rem;
+}

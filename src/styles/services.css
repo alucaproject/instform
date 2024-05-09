@@ -1,0 +1,62 @@
+
+.services__container :is(.section__subheader, .section__header){
+    text-align: center;
+}
+
+.services__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.services__card img {
+    
+    margin: 2rem auto 0.5rem auto;
+    
+    width: 3.5rem;
+}
+
+.services__card div {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.services__card p {
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.services__card a {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.services__card h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+@media (width > 540px) {
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width > 768px) {
+
+    .services__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (width > 1024px) {
+    .services__grid {
+        gap: 2rem;
+    }
+}

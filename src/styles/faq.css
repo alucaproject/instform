@@ -1,0 +1,71 @@
+
+.faq__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.faq__image {
+    overflow: hidden;
+    margin-inline: auto;
+}
+
+.faq__image img {
+    max-width: 450px;
+    margin-inline: auto;
+}
+
+.faq__content .section__header {
+    margin-bottom: 1rem;
+}
+
+.faq__grid {
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.faq__card {
+    padding: 1rem;
+    display: grid;
+    gap: 10px;
+    background-color: var(--extra-light);
+    border: 5px;
+}
+
+.faq__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.faq__header h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.faq__header span {
+    font-size: 1.5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.faq__card.active .faq__header span {
+    transform: rotate(180deg);
+} 
+
+.faq__description {
+    color: var(--text-light);
+    display: none;
+}
+
+.faq__card.active .faq__description {
+    display: block;
+}
+
+@media (width > 768px) {
+    .faq__container {
+        grid-template-columns: repeat(2, 1fr );
+    }
+}
