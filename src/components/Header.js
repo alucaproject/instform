@@ -1,5 +1,11 @@
 import "../styles/header.css";
 import {motion, useScroll, useTransform} from 'framer-motion';
+import backgroundImage from "../assets/photos_webp/jon-grogan-mB_yu9FBVeo-unsplash1920x1272.webp";
+
+var backgroundImageStyle = {
+    backgroundImage: `linear-gradient(0.05turn, rgba( 0, 0, 0, .99), rgba( 17, 23, 43, .40), rgba( 17, 23, 43, .70)),
+    url(${backgroundImage})`,
+}
 
 var textParent = {
     initial: {
@@ -31,7 +37,7 @@ var textChild = {
 
 const Header = () => {
     return (
-        <header>
+        <header style={backgroundImageStyle}>
             <div className="section__container header__container" id="home">
 
                 <motion.div 

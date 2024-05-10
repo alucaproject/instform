@@ -1,14 +1,22 @@
 import "../styles/loader.css";
 import { useEffect } from "react";
 import {motion} from "framer-motion";
+import backgroundImage from "../assets/photos_webp/jon-grogan-mB_yu9FBVeo-unsplash1920x1272.webp";
 
 
 const Loader = ( {setLoading} ) => {
     
     useEffect( () => {
         const timer = setTimeout( () => {
-            setLoading(false);
-        }, 2000);
+
+            {/* setLoading(false); */}
+        
+            fetch( backgroundImage )
+                .then( setLoading(false) )
+                .then( console.log("background image ... loaded") );
+        
+            }, 2000);
+
         return () => clearTimeout(timer);
     });
 

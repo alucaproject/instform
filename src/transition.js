@@ -18,7 +18,8 @@ const transition = (OgComponent) => {
                 initial={{ scaleY: 1 }}
                 animate={{ scaleY: 0 }}
                 exit={{scaleY: 0 }}
-                transition={{ duration: 1.5, ease:[0.33, 1, 0.68, 1] }} // easeOutCubic easings.net
+                // added delay 0.3 to hide the image rendering 
+                transition={{ delay: 0.3, duration: 1.5, ease:[0.33, 1, 0.68, 1] }} // easeOutCubic easings.net
             />
          </>
     )
