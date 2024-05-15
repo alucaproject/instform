@@ -32,6 +32,41 @@ header {
     color: var(--white); 
 }
 
+/* transition */
+.pre_loader_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+
+    background-color: var(--primary-color-dark);
+    
+    /* needed for framer motion */
+    transform-origin: top;
+}
+.pre_loader_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+
+    transform: translateY( -7% );
+}
+.pre_loader_subheading {
+    overflow: hidden;
+}
+.pre_loader_subheading p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    
+}
+
 
 @media (width > 768px) {
 
@@ -44,4 +79,8 @@ header {
         line-height: 5.7rem;
     }
 
+    /* preloader */
+    .pre_loader_wrapper {
+        transform: translateY(0);
+    }
 }
