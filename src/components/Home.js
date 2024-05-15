@@ -27,4 +27,5 @@ const Home = () => {
     )
 }
 
-export default transition(Home);
+/* export default transition(Home); */ // no need to use transition effect as we added pre loader in Header.js
+export default Home; // pre loader transition is built inside the header component
